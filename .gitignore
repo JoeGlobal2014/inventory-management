@@ -1,8 +1,8 @@
-
-
-
 # Ignore the fresh-clone directory
 fresh-clone/
+
+# Dependency directories
+node_modules/
 
 # Logs
 logs
