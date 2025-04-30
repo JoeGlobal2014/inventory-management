@@ -1,3 +1,9 @@
+
+
+
+# Ignore the fresh-clone directory
+fresh-clone/
+
 # Logs
 logs
 *.log
