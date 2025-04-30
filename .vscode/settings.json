@@ -1,0 +1,8 @@
+{
+    
+    "python.pythonPath": "C:\\Users\\joegl\\.vscode\\Python Workspace\\backend\\venv\\Scripts\\python.exe",
+    "editor.formatOnSave": true,
+      
+    "github.copilot.chat.languageContext.fix.typescript.enabled": true,
+    "github.copilot.chat.languageContext.inline.typescript.enabled": true
+}
