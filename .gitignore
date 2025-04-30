@@ -1,4 +1,24 @@
-# Ignore the fresh-clone directory
+# Ignore BFG reports
+.git.bfg-report/
+
+# Ignore library and meta files
+LICENSE_scala-library-2.13.16
+NOTICE_scala-library-2.13.16
+META-INF/
+OSGI-INF/
+about_org.eclipse.jgit-6.10.0.202406032230-r.html
+bfg-1.15.0.jar
+library.properties
+module-info.class
+scala-parallel-collections.properties
+
+# Ignore directories
+com/
+javax/
+org/
+scala/
+scopt/
+use/# Ignore the fresh-clone directory
 fresh-clone/
 
 # Dependency directories
