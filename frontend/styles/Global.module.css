@@ -1,0 +1,83 @@
+import api from "@/lib/api";
+import globalStyles from "@/styles/Global.module.css";
+import buttonStyles from "@/styles/Button.module.css";
+import inputStyles from "@/styles/Input.module.css";
+import tableStyles from "@/styles/Table.module.css";
+
+type InventoryItem = {
+  id: number;
+  name: string;
+  quantity: number;
+  location: string;
+};
+
+export default async function InventoryCrud() {
+  const { data: inventory } = await api.getInventory();
+
+  return (
+    <div className={globalStyles.container}>
+      <div className={globalStyles.header}>
+        <h1 className={globalStyles.heading}>Inventory Management</h1>
+      </div>
+
+      {/* Form for creating new inventory item */}
+      <form className={inputStyles.form} action="/api/inventory" method="POST">
+        <div className={inputStyles.inputGroup}>
+          <label className={inputStyles.label}>Item Name</label>
+          <input
+            className={inputStyles.input}
+            type="text"
+            name="name"
+            placeholder="Enter item name"
+            required
+          />
+        </div>
+        <div className={inputStyles.inputGroup}>
+          <label className={inputStyles.label}>Quantity</label>
+          <input
+            className={inputStyles.input}
+            type="number"
+            name="quantity"
+            placeholder="Enter quantity"
+            required
+          />
+        </div>
+        <div className={inputStyles.inputGroup}>
+          <label className={inputStyles.label}>Location</label>
+          <input
+            className={inputStyles.input}
+            type="text"
+            name="location"
+            placeholder="Enter location"
+            required
+          />
+        </div>
+        <button className={buttonStyles.primaryButton} type="submit">
+          Add Item
+        </button>
+      </form>
+
+      {/* Table to display inventory */}
+      <table className={tableStyles.table}>
+        <thead>
+          <tr className={tableStyles.tr}>
+            <th className={tableStyles.th}>ID</th>
+            <th className={tableStyles.th}>Name</th>
+            <th className={tableStyles.th}>Quantity</th>
+            <th className={tableStyles.th}>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          {inventory.map((item: InventoryItem) => (
+            <tr key={item.id} className={tableStyles.tr}>
+              <td className={tableStyles.td}>{item.id}</td>
+              <td className={tableStyles.td}>{item.name}</td>
+              <td className={tableStyles.td}>{item.quantity}</td>
+              <td className={tableStyles.td}>{item.location}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}

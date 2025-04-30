@@ -1,0 +1,101 @@
+:root {
+    --weak-color: #ff4444;
+    --moderate-color: #ffbb33;
+    --strong-color: #00C851;
+  }
+  
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1 1 200px;
+  }
+  
+  .label {
+    font-size: 14px;
+  }
+  
+  .labelAuth {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+  }
+  
+  .input {
+    padding: 8px;
+    font-size: 14px;
+    background-color: var(--secondary-bg);
+    border: none;
+    border-radius: 4px;
+    color: var(--text-color);
+    outline: none;
+  }
+  
+  .inputAuth {
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--secondary-bg);
+    border: none;
+    border-radius: 4px;
+    color: var(--text-color);
+    outline: none;
+  }
+  
+  .strengthContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .strengthBar {
+    height: 5px;
+    border-radius: 3px;
+    transition: width 0.3s, background-color 0.3s;
+  }
+  
+  .strengthBarWeak {
+    background-color: var(--weak-color);
+    width: 33%;
+  }
+  
+  .strengthBarModerate {
+    background-color: var(--moderate-color);
+    width: 66%;
+  }
+  
+  .strengthBarStrong {
+    background-color: var(--strong-color);
+    width: 100%;
+  }
+  
+  .strengthText {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .strengthTextWeak {
+    color: var(--weak-color);
+  }
+  
+  .strengthTextModerate {
+    color: var(--moderate-color);
+  }
+  
+  .strengthTextStrong {
+    color: var(--strong-color);
+  }

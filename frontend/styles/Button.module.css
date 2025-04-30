@@ -1,0 +1,83 @@
+:root {
+    --primary-button-bg: #f7c948;
+    --primary-button-text: #000;
+    --danger-button-bg: #ff4444;
+    --danger-button-text: #fff;
+    --disabled-button-bg: #aaa;
+    --disabled-button-text: #fff;
+  }
+  
+  .primaryButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--primary-button-text);
+    background-color: var(--primary-button-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .primaryButtonAuth {
+    padding: 12px;
+    font-size: 16px;
+    color: var(--primary-button-text);
+    background-color: var(--primary-button-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .dangerButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--danger-button-text);
+    background-color: var(--danger-button-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .dangerButtonSmall {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: var(--danger-button-text);
+    background-color: var(--danger-button-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .logoutButton {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: var(--danger-button-text);
+    background-color: var(--danger-button-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .disabledButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--disabled-button-text);
+    background-color: var(--disabled-button-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+    font-weight: bold;
+  }
+  
+  .disabledButtonAuth {
+    padding: 12px;
+    font-size: 16px;
+    color: var(--disabled-button-text);
+    background-color: var(--disabled-button-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+    font-weight: bold;
+  }

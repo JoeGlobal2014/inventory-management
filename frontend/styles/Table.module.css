@@ -1,0 +1,24 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--secondary-bg);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .th {
+    padding: 10px;
+    background-color: var(--table-header-bg);
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .td {
+    padding: 10px;
+    border-top: 1px solid var(--table-header-bg);
+    font-size: 14px;
+  }
+  
+  .tr {
+    border-bottom: 1px solid var(--table-header-bg);
+  }
