@@ -40,7 +40,9 @@ build/Release
 
 # Dependency directories
 node_modules/
-jspm_packages/
+.vscode/
+.venv/
+.next/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -82,6 +84,10 @@ web_modules/
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
+
+# Build output
+dist/
+build/
 
 # Next.js build output
 .next
@@ -134,4 +140,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-"node_modules/" 
