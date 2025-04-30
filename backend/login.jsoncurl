@@ -1,0 +1,1 @@
+'{"username":"newuser56","password":"password"}'  -H "Content-Type: application/json" --data-binary @login.json http://localhost:5000/api/login -v
